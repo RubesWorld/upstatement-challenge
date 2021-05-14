@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: #f1d7c1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    background-color: #f1d7c1;
+  }
+}
+
+.carousel {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 1000px;
+  height: 600px;
+  border-radius: 15px;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 70%;
+  left: 40px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+.right-arrow {
+  position: absolute;
+  top: 70%;
+  right: 40px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.3);
+  }
+}
