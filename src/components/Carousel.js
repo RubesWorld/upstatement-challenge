@@ -31,20 +31,21 @@ function Carousel() {
             </div>
           );
         })}
-      </div>
-      <div className="arrow-div">
-        <img
-          src={left}
-          className="left-arrow"
-          alt="left-arrow"
-          onClick={previousImage}
-        />
-        <img
-          src={right}
-          className="right-arrow"
-          alt="right-arrow"
-          onClick={nextImage}
-        />
+
+        <div className="arrow-div">
+          <img
+            src={left}
+            className="left-arrow"
+            alt="left-arrow"
+            onClick={previousImage}
+          />
+          <img
+            src={right}
+            className="right-arrow"
+            alt="right-arrow"
+            onClick={nextImage}
+          />
+        </div>
       </div>
     </>
   );
