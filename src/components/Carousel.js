@@ -3,7 +3,7 @@ import images from "../images";
 import left from "../img/left-arrow.png";
 import right from "../img/right-arrow.png";
 
-function Carousel() {
+function Carousel({ mode }) {
   const [position, setPosition] = useState(0);
 
   const nextImage = (e) => {
@@ -33,18 +33,38 @@ function Carousel() {
         })}
 
         <div className="arrow-div">
-          <img
-            src={left}
+          <svg
             className="left-arrow"
-            alt="left-arrow"
             onClick={previousImage}
-          />
-          <img
-            src={right}
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            data-reactroot=""
+          >
+            <path
+              className={mode === "light" ? "arrow-fill" : "arrow-fill-dark"}
+              d="M16 4V20L8 12L16 4Z"
+              undefined="2.5"
+            ></path>
+          </svg>
+          <svg
             className="right-arrow"
-            alt="right-arrow"
             onClick={nextImage}
-          />
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            data-reactroot=""
+          >
+            <path
+              className={mode === "light" ? "arrow-fill" : "arrow-fill-dark"}
+              d="M8 4V20L16 12L8 4Z"
+              undefined="2.5"
+            ></path>
+          </svg>
         </div>
       </div>
     </>
