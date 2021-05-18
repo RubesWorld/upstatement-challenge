@@ -21,7 +21,7 @@ function Carousel({ mode }) {
         {images.map((image, index) => {
           return (
             <div
-              className={index === position ? "image active" : "slide"}
+              className={index === position ? "picture active" : "picture"}
               key={index}
             >
               {/* if the index matches the position, it will only show that image  */}

@@ -61,6 +61,16 @@
       height: 180px;
     }
   }
+  .picture {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+
+  .picture.active {
+    opacity: 1;
+    transition-duration: 0.8s;
+    transform: scale(1.15);
+  }
   .arrow-fill-dark {
     fill: white;
   }
@@ -97,10 +107,16 @@
     }
     @media screen and (min-width: 500px) and (max-width: 700px) {
       top: 12%;
+      &:hover {
+        transform: none;
+      }
     }
     @media screen and (max-width: 499px) {
       top: 5%;
       right: 10px;
+      &:hover {
+        transform: none;
+      }
     }
   }
 }
@@ -163,6 +179,16 @@
       width: 300px;
       height: 180px;
     }
+  }
+  .picture {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+
+  .picture.active {
+    opacity: 1;
+    transition-duration: 0.8s;
+    transform: scale(1.15);
   }
   .arrow-fill {
     fill: #000000;
