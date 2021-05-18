@@ -28,70 +28,79 @@
     @media screen and (max-width: 499px) {
       height: 100vh;
     }
-    .arrow-div {
-      align-items: flex-start;
+  }
+  .arrow-div {
+    align-items: flex-start;
+  }
+  .text-container {
+    padding: 2rem 2rem;
+    @media screen and (min-width: 701px) and (max-width: 1000px) {
+      margin: 0 1rem;
     }
-    .text-container {
-      padding: 2rem 2rem;
+    @media screen and (min-width: 500px) and (max-width: 700px) {
+      margin: 0 1rem;
     }
-    .image {
-      width: 1000px;
-      height: 600px;
-      border-radius: 15px;
-      @media screen and (min-width: 701px) and (max-width: 1000px) {
-        width: 700px;
-        height: 420px;
-      }
-      @media screen and (min-width: 500px) and (max-width: 700px) {
-        width: 450px;
-        height: 270px;
-      }
-      @media screen and (max-width: 499px) {
-        width: 300px;
-        height: 180px;
-      }
+    @media screen and (max-width: 499px) {
+      margin: 0rem 0.5rem;
     }
-    .arrow-fill-dark {
-      fill: white;
+  }
+  .image {
+    width: 1000px;
+    height: 600px;
+    border-radius: 15px;
+    @media screen and (min-width: 701px) and (max-width: 1000px) {
+      width: 700px;
+      height: 420px;
     }
+    @media screen and (min-width: 500px) and (max-width: 700px) {
+      width: 450px;
+      height: 270px;
+    }
+    @media screen and (max-width: 499px) {
+      width: 300px;
+      height: 180px;
+    }
+  }
+  .arrow-fill-dark {
+    fill: white;
+  }
 
-    .left-arrow {
-      position: absolute;
-      top: 40%;
-      left: 30px;
-      cursor: pointer;
-      &:hover {
-        transform: scale(1.3);
-      }
-      @media screen and (min-width: 701px) and (max-width: 1000px) {
-        top: 20%;
-      }
-      @media screen and (min-width: 500px) and (max-width: 700px) {
-        top: 12%;
-      }
-      @media screen and (max-width: 499px) {
-        top: 5%;
-        left: 10px;
-      }
+  .left-arrow {
+    position: absolute;
+    top: 40%;
+    left: 30px;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.3);
     }
-    .right-arrow {
-      position: absolute;
-      top: 40%;
-      right: 30px;
-      cursor: pointer;
-      &:hover {
-        transform: scale(1.3);
-      }
-      @media screen and (min-width: 701px) and (max-width: 1000px) {
-        top: 20%;
-      }
-      @media screen and (min-width: 500px) and (max-width: 700px) {
-        top: 12%;
-      }
-      @media screen and (max-width: 499px) {
-        top: 5%;
-        right: 10px;
-      }
+    @media screen and (min-width: 701px) and (max-width: 1000px) {
+      top: 20%;
+    }
+    @media screen and (min-width: 500px) and (max-width: 700px) {
+      top: 12%;
+    }
+    @media screen and (max-width: 499px) {
+      top: 5%;
+      left: 10px;
+    }
+  }
+  .right-arrow {
+    position: absolute;
+    top: 40%;
+    right: 30px;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.3);
+    }
+    @media screen and (min-width: 701px) and (max-width: 1000px) {
+      top: 20%;
+    }
+    @media screen and (min-width: 500px) and (max-width: 700px) {
+      top: 12%;
+    }
+    @media screen and (max-width: 499px) {
+      top: 5%;
+      right: 10px;
     }
   }
 }
@@ -122,69 +131,78 @@
     @media screen and (max-width: 499px) {
       height: 100vh;
     }
-    .arrow-div {
-      align-items: flex-start;
+  }
+  .arrow-div {
+    align-items: flex-start;
+  }
+  .text-container {
+    padding: 2rem 2rem;
+    @media screen and (min-width: 701px) and (max-width: 1000px) {
+      margin: 0 1rem;
     }
-    .text-container {
-      padding: 2rem 2rem;
+    @media screen and (min-width: 500px) and (max-width: 700px) {
+      margin: 0 1rem;
     }
-    .image {
-      width: 1000px;
-      height: 600px;
-      border-radius: 15px;
-      @media screen and (min-width: 701px) and (max-width: 1000px) {
-        width: 700px;
-        height: 420px;
-      }
-      @media screen and (min-width: 500px) and (max-width: 700px) {
-        width: 450px;
-        height: 270px;
-      }
-      @media screen and (max-width: 499px) {
-        width: 300px;
-        height: 180px;
-      }
+    @media screen and (max-width: 499px) {
+      margin: 0rem 0.5rem;
     }
-    .arrow-fill {
-      fill: #000000;
+  }
+  .image {
+    width: 1000px;
+    height: 600px;
+    border-radius: 15px;
+    @media screen and (min-width: 701px) and (max-width: 1000px) {
+      width: 700px;
+      height: 420px;
     }
-    .left-arrow {
-      position: absolute;
-      top: 40%;
-      left: 30px;
-      cursor: pointer;
-      &:hover {
-        transform: scale(1.3);
-      }
-      @media screen and (min-width: 701px) and (max-width: 1000px) {
-        top: 20%;
-      }
-      @media screen and (min-width: 500px) and (max-width: 700px) {
-        top: 12%;
-      }
-      @media screen and (max-width: 499px) {
-        top: 5%;
-        left: 10px;
-      }
+    @media screen and (min-width: 500px) and (max-width: 700px) {
+      width: 450px;
+      height: 270px;
     }
-    .right-arrow {
-      position: absolute;
-      top: 40%;
-      right: 30px;
-      cursor: pointer;
-      &:hover {
-        transform: scale(1.3);
-      }
-      @media screen and (min-width: 701px) and (max-width: 1000px) {
-        top: 20%;
-      }
-      @media screen and (min-width: 500px) and (max-width: 700px) {
-        top: 12%;
-      }
-      @media screen and (max-width: 499px) {
-        top: 5%;
-        right: 10px;
-      }
+    @media screen and (max-width: 499px) {
+      width: 300px;
+      height: 180px;
+    }
+  }
+  .arrow-fill {
+    fill: #000000;
+  }
+  .left-arrow {
+    position: absolute;
+    top: 40%;
+    left: 30px;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.3);
+    }
+    @media screen and (min-width: 701px) and (max-width: 1000px) {
+      top: 20%;
+    }
+    @media screen and (min-width: 500px) and (max-width: 700px) {
+      top: 12%;
+    }
+    @media screen and (max-width: 499px) {
+      top: 5%;
+      left: 10px;
+    }
+  }
+  .right-arrow {
+    position: absolute;
+    top: 40%;
+    right: 30px;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.3);
+    }
+    @media screen and (min-width: 701px) and (max-width: 1000px) {
+      top: 20%;
+    }
+    @media screen and (min-width: 500px) and (max-width: 700px) {
+      top: 12%;
+    }
+    @media screen and (max-width: 499px) {
+      top: 5%;
+      right: 10px;
     }
   }
 }
