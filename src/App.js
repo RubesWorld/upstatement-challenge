@@ -15,13 +15,13 @@ function App() {
     <div className={mode === "light" ? "App" : "App-dark"}>
       <div className="text-container">
         <div className="toggle-div">
+          <h1>Image Carousel</h1>
           {mode === "light" ? (
             <DarkButton modeToggle={modeToggle} />
           ) : (
             <LightButton modeToggle={modeToggle} />
           )}
         </div>
-        <h1>Image Carousel</h1>
         <h2> The Greatest Philosophers of Mankind</h2>
       </div>
       <Carousel mode={mode} />
