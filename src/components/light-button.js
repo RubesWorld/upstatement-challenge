@@ -1,9 +1,9 @@
 import React from "react";
 
-function LightButton() {
+function LightButton({ modeToggle }) {
   return (
     <>
-      <button className="theme-button">
+      <button className="theme-button" onClick={modeToggle}>
         <svg
           width="40"
           height="40"
