@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import images from "../images";
-import left from "../img/left-arrow.png";
-import right from "../img/right-arrow.png";
 
 function Carousel({ mode }) {
   const [position, setPosition] = useState(0);
@@ -13,8 +11,6 @@ function Carousel({ mode }) {
     setPosition(position === 0 ? images.length - 1 : position - 1);
   };
 
-  console.log(position);
-
   return (
     <>
       <div className="carousel">
@@ -24,7 +20,6 @@ function Carousel({ mode }) {
               className={index === position ? "picture active" : "picture"}
               key={index}
             >
-              {/* if the index matches the position, it will only show that image  */}
               {index === position && (
                 <img src={image.image} alt="pics" className="image" />
               )}
