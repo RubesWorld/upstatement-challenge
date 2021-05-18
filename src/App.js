@@ -1,5 +1,5 @@
 import react, { useState } from "react";
-import "./app.scss";
+
 import Carousel from "./components/Carousel";
 import LightButton from "./components/light-button";
 import DarkButton from "./components/dark-button";
