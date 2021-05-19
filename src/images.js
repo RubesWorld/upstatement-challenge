@@ -7,18 +7,23 @@ import zeno from "./img/Zeno.jpg";
 export const images = [
   {
     image: plato,
+    name: "Plato",
   },
   {
     image: epicurus,
+    name: "Epicurus",
   },
   {
     image: kant,
+    name: "Kant",
   },
   {
     image: locke,
+    name: "Locke",
   },
   {
     image: zeno,
+    name: "Zeno",
   },
 ];
 

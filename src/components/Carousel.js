@@ -4,11 +4,13 @@ import images from "../images";
 function Carousel({ mode }) {
   const [position, setPosition] = useState(0);
 
+  const length = images.length;
+
   const nextImage = (e) => {
-    setPosition(position === images.length - 1 ? 0 : position + 1);
+    setPosition(position === length - 1 ? 0 : position + 1);
   };
   const previousImage = (e) => {
-    setPosition(position === 0 ? images.length - 1 : position - 1);
+    setPosition(position === 0 ? length - 1 : position - 1);
   };
 
   return (
@@ -21,7 +23,10 @@ function Carousel({ mode }) {
               key={index}
             >
               {index === position && (
-                <img src={image.image} alt="pics" className="image" />
+                <>
+                  <img src={image.image} alt="pics" className="image" />
+                  <h3 className="text">{image.name}</h3>
+                </>
               )}
             </div>
           );
@@ -37,6 +42,7 @@ function Carousel({ mode }) {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             data-reactroot=""
+            data-testid="left-arrow"
           >
             <path
               className={mode === "light" ? "arrow-fill" : "arrow-fill-dark"}

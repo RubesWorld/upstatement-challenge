@@ -3,7 +3,11 @@ import React from "react";
 function DarkButton({ modeToggle }) {
   return (
     <>
-      <button className="theme-button" onClick={modeToggle}>
+      <button
+        className="theme-button"
+        onClick={modeToggle}
+        aria-label="dark-button"
+      >
         <svg
           width="40"
           height="40"

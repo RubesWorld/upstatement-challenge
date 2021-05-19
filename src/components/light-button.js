@@ -3,7 +3,7 @@ import React from "react";
 function LightButton({ modeToggle }) {
   return (
     <>
-      <button className="theme-button" onClick={modeToggle}>
+      <button className="theme-button" onClick={modeToggle} aria-label="light-button">
         <svg
           width="40"
           height="40"

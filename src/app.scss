@@ -77,12 +77,12 @@ code {
   }
   .picture {
     opacity: 0;
-    transition-duration: 1s ease;
+    transition-duration: 1s ease-in;
   }
 
   .picture.active {
     opacity: 1;
-    transition-duration: 0.8s;
+    transition-duration: 1.8s;
   }
   .arrow-fill-dark {
     fill: white;
@@ -195,13 +195,14 @@ code {
   }
   .picture {
     opacity: 0;
-    transition-duration: 1s ease;
+    transition-duration: 1s ease-in;
   }
 
   .picture.active {
     opacity: 1;
-    transition-duration: 0.8s;
+    transition-duration: 1.8s;
   }
+
   .arrow-fill {
     fill: #000000;
   }
