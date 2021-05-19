@@ -21,11 +21,13 @@ Build a carousel with 5 images of your choice.
 ### Extras
 
 [x]Light and Dark Mode Toggle
+<br />
 [x]Responsive Design
 
 ### Live-App
 
 This challenge was deployed on Netlify. You can find the site [here](https://upstatement-challenge.netlify.app)
 
-### Tech-Stack 
-This Image Carousel was created using React.js Functional Components and Sass for styling. The slider was created using a state hook and the index from the map method of the image array. 
+### Tech-Stack
+
+This Image Carousel was created using React.js Functional Components and Sass for styling. The slider was created using a state hook and the index from the map method of the image array.
